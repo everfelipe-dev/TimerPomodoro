@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Temporizador estilo Pomodoro" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>FocusTimer - Pomodoro</title>
+  </head>
+  <body>
+    <main>
+      <div id="timer">
+        <span class="minutes">25</span>
+        <span>:</span>
+        <span class="seconds">00</span>
+      </div>
+      <div id="controls">
+        <button type="button" class="play">
+          <svg
+            width="98"
+            height="89"
+            viewBox="0 0 98 89"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M50.5 84C73.5714 84 93 66.6996 93 44.5C93 22.3004 73.5714 5 50.5 5C27.4286 5 8 22.3004 8 44.5C8 66.6996 27.4286 84 50.5 84Z"
+              stroke="#42C2F9"
+              stroke-width="10"
+            />
+            <path
+              d="M72.3357 40.835L40.9898 23.4287C38.443 22.0151 34.5426 23.3869 34.5426 26.8832V61.6876C34.5426 64.8242 38.1669 66.7146 40.9898 65.1421L72.3357 47.7441C75.1319 46.1966 75.1408 42.3825 72.3357 40.835Z"
+              fill="#42C2F9"
+            />
+          </svg>
+        </button>
+        <button type="button" class="set">
+          <svg
+            width="95"
+            height="89"
+            viewBox="0 0 95 89"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M47.5 84C70.5714 84 90 66.6996 90 44.5C90 22.3004 70.5714 5 47.5 5C24.4286 5 5 22.3004 5 44.5C5 66.6996 24.4286 84 47.5 84Z"
+              stroke="#F9F9F9"
+              stroke-width="10"
+            />
+            <path
+              d="M47.5 36.3333V46.5417M65.3646 47.0521C65.3646 56.9133 57.3613 64.9167 47.5 64.9167C37.6388 64.9167 29.6354 56.9133 29.6354 47.0521C29.6354 37.1908 37.6388 29.1875 47.5 29.1875C57.3613 29.1875 65.3646 37.1908 65.3646 47.0521Z"
+              stroke="#FEFCFC"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M41.375 24.0833H53.625"
+              stroke="#FEFCFC"
+              stroke-width="1.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <button type="button" class="pause hide">
+          <svg
+            width="95"
+            height="89"
+            viewBox="0 0 95 89"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M47.5 84C70.5714 84 90 66.6996 90 44.5C90 22.3004 70.5714 5 47.5 5C24.4286 5 5 22.3004 5 44.5C5 66.6996 24.4286 84 47.5 84Z"
+              stroke="#42C2F9"
+              stroke-width="10"
+            />
+            <rect x="32" y="25" width="11" height="39" rx="3" fill="#42C2F9" />
+            <rect x="52" y="25" width="11" height="39" rx="3" fill="#42C2F9" />
+          </svg>
+        </button>
+        <button type="button" class="stop hide">
+          <svg
+            width="95"
+            height="89"
+            viewBox="0 0 95 89"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect x="28" y="27" width="38" height="36" rx="7" fill="white" />
+            <path
+              d="M47.5 84C70.5714 84 90 66.6996 90 44.5C90 22.3004 70.5714 5 47.5 5C24.4286 5 5 22.3004 5 44.5C5 66.6996 24.4286 84 47.5 84Z"
+              stroke="white"
+              stroke-width="10"
+            />
+          </svg>
+        </button>
+      </div>
+    </main>
+    <footer>
+      <button type="button" class="sound-off hide">
+        <svg
+          width="117"
+          height="108"
+          viewBox="0 0 117 108"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.924 0L112.47 99.7056L104.188 108L52.6317 56.3601L52.632 101.476L22.2388 77.9814H0V31.0611H22.2045L25.0967 28.7812L4.64288 8.29441L12.924 0ZM99.17 7.70189C117.763 28.4969 121.815 57.5676 111.324 81.969L102.28 72.9098C108.832 53.3893 104.75 31.1291 90.0338 15.0224L99.17 7.70189ZM33.4385 37.1361L26.2645 42.7912H11.7112V66.2513H26.2302L40.9207 77.6033L40.9207 44.6303L33.4385 37.1361ZM76.0077 26.2617C83.8651 35.0384 87.414 46.2675 86.6545 57.2596L73.1395 43.7231C71.7757 40.0653 69.6828 36.6142 66.8608 33.5909L76.0077 26.2617ZM52.632 7.07972L52.6317 23.1829L43.6342 14.1709L52.632 7.07972Z"
+            fill="white"
+          />
+        </svg>
+      </button>
+      <button type="button" class="soubd-on">
+        <svg
+          width="105"
+          height="99"
+          viewBox="0 0 105 99"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 30.4286V68.5714H23.2692L52.5 94V5L23.2692 30.4286H5Z"
+            stroke="#42C2F9"
+            stroke-width="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M70.7692 34.6667C70.7692 34.6667 78.0769 38.9048 78.0769 49.5C78.0769 60.0952 70.7692 64.3333 70.7692 64.3333M78.0769 9.2381C92.6923 17.7143 100 30.4286 100 49.5C100 68.5714 92.6923 81.2857 78.0769 89.7619"
+            stroke="#42C2F9"
+            stroke-width="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </footer>
+  </body>
+</html>
