@@ -21,10 +21,13 @@ body {
 #timer {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 10.8rem;
 }
 button {
   background-color: transparent;
+  width: 100px;
+  height: 100px;
   border: none;
   cursor: pointer;
 }
@@ -39,6 +42,7 @@ button {
   border-radius: 9999px;
   gap: 3.2rem;
   width: 32rem;
+  padding: 1rem;
 }
 main {
   justify-self: center;
@@ -48,4 +52,19 @@ footer {
   justify-self: right;
   align-self: end;
   padding: 0 4rem 3.2rem 0;
+}
+.pointer {
+  padding-bottom: 20px;
+  transition: all 1s;
+}
+.pointerAnimation {
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

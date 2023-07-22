@@ -11,7 +11,7 @@
     <main>
       <div id="timer">
         <span class="minutes">25</span>
-        <span>:</span>
+        <span class="pointer">:</span>
         <span class="seconds">00</span>
       </div>
       <div id="controls">
@@ -24,7 +24,7 @@
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M50.5 84C73.5714 84 93 66.6996 93 44.5C93 22.3004 73.5714 5 50.5 5C27.4286 5 8 22.3004 8 44.5C8 66.6996 27.4286 84 50.5 84Z"
+              d="M47.5 84C70.5714 84 90 66.6996 90 44.5C90 22.3004 70.5714 5 47.5 5C24.4286 5 5 22.3004 5 44.5C5 66.6996 24.4286 84 47.5 84Z"
               stroke="#42C2F9"
               stroke-width="10"
             />
@@ -34,11 +34,28 @@
             />
           </svg>
         </button>
+        <button type="button" class="pause hide">
+          <svg
+            width="98"
+            height="89"
+            viewBox="0 0 98 89"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M47.5 84C70.5714 84 90 66.6996 90 44.5C90 22.3004 70.5714 5 47.5 5C24.4286 5 5 22.3004 5 44.5C5 66.6996 24.4286 84 47.5 84Z"
+              stroke="#42C2F9"
+              stroke-width="10"
+            />
+            <rect x="32" y="25" width="11" height="39" rx="3" fill="#42C2F9" />
+            <rect x="52" y="25" width="11" height="39" rx="3" fill="#42C2F9" />
+          </svg>
+        </button>
         <button type="button" class="set">
           <svg
-            width="95"
+            width="98"
             height="89"
-            viewBox="0 0 95 89"
+            viewBox="0 0 98 89"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -64,28 +81,12 @@
             />
           </svg>
         </button>
-        <button type="button" class="pause hide">
-          <svg
-            width="95"
-            height="89"
-            viewBox="0 0 95 89"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M47.5 84C70.5714 84 90 66.6996 90 44.5C90 22.3004 70.5714 5 47.5 5C24.4286 5 5 22.3004 5 44.5C5 66.6996 24.4286 84 47.5 84Z"
-              stroke="#42C2F9"
-              stroke-width="10"
-            />
-            <rect x="32" y="25" width="11" height="39" rx="3" fill="#42C2F9" />
-            <rect x="52" y="25" width="11" height="39" rx="3" fill="#42C2F9" />
-          </svg>
-        </button>
+
         <button type="button" class="stop hide">
           <svg
-            width="95"
+            width="98"
             height="89"
-            viewBox="0 0 95 89"
+            viewBox="0 0 98 89"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -116,7 +117,7 @@
           />
         </svg>
       </button>
-      <button type="button" class="soubd-on">
+      <button type="button" class="sound-on">
         <svg
           width="105"
           height="99"
@@ -141,5 +142,6 @@
         </svg>
       </button>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
